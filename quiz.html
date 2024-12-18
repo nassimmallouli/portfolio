@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Nassim</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="cancel" id="cancel">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="evenement.html">Evenement</a>
+            <a href="experience.html">Experience</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="passion.html">Passion</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <a href="iit.html">IIT</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz-content">
+            <h1>Test Your Knowledge</h1>
+            <form id="quiz-form">
+                
+                <p>1. What does HTML stand for?</p>
+                <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label>
+                <label><input type="radio" name="q1" value="b"> HighText Machine Language</label>
+    
+                <p>2. What does CSS stand for?</p>
+                <label><input type="radio" name="q2" value="a"> Cascading Style Sheets</label>
+                <label><input type="radio" name="q2" value="b"> Computer Style Sheets</label>
+    
+                <p>3. Which programming language runs in a web browser?</p>
+                <label><input type="radio" name="q3" value="a"> Python</label>
+                <label><input type="radio" name="q3" value="b"> JavaScript</label>
+    
+                <p>4. What tag is used to link a CSS file?</p>
+                <label><input type="radio" name="q4" value="a"> link</label>
+                <label><input type="radio" name="q4" value="b"> style</label>
+    
+                <p>5. What is the purpose of the "alt" attribute in images?</p>
+                <label><input type="radio" name="q5" value="a"> To add a tooltip</label>
+                <label><input type="radio" name="q5" value="b"> To describe the image</label>
+    
+               
+                <p>6. What does "DOM" stand for?</p>
+                <label><input type="radio" name="q6" value="a"> Document Object Model</label>
+                <label><input type="radio" name="q6" value="b"> Data Object Model</label>
+    
+                <p>7. Which symbol is used to denote an ID selector in CSS?</p>
+                <label><input type="radio" name="q7" value="a"> #</label>
+                <label><input type="radio" name="q7" value="b"> .</label>
+    
+                <p>8. What does "console.log()" do in JavaScript?</p>
+                <label><input type="radio" name="q8" value="a"> Displays output in the console</label>
+                <label><input type="radio" name="q8" value="b"> Creates a popup alert</label>
+    
+                <p>9. Which tag is used to add JavaScript to an HTML file?</p>
+                <label><input type="radio" name="q9" value="a"> script</label>
+                <label><input type="radio" name="q9" value="b"> js</label>
+    
+                <p>10. How do you comment a single line in JavaScript?</p>
+                <label><input type="radio" name="q10" value="a"> //</label>
+                <label><input type="radio" name="q10" value="b">/*</label>
+            </form>
+            <button id="submit-quiz">Submit</button>
+        </section>
+    
+        <!-- Result Section -->
+        <section id="quiz-result" style="display: none;">
+            <h2>Your Score: <span id="score"></span>/10</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 portfolio nassim</p>
+    </footer>
+
+
+</body>
+
+</html>

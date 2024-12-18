@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Nassim</a>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars" onclick="hamburger()"></i>
+      </div>
+      <div class="cancel" id="cancel">
+        <i class="fas fa-times" onclick="cancel()"></i>
+      </div>
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="evenement.html">Evenement</a>
+      <a href="experience.html">Experience</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="passion.html">Passion</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="iit.html">IIT</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="home">
+      <div class="home-img">
+        <img src="c9aeba40-8ca2-4d6b-b285-648915609bd6.jpg" alt="my pic">
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Nassim</span></h1>
+        <h3 class="typing-text">I'm <span>IT STUDENT</span></h3>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: ["an IT student", "interested in game dev"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+          })  
+        </script>
+
+
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="CV.pdf" download=" " class="btn">Download cv</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 portfolio nassim</p>
+  </footer>
+
+
+</body>
+
+</html>
